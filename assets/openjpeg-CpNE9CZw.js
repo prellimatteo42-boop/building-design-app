@@ -1,0 +1,1 @@
+var e=new URL(`openjpeg-tw7Aizcv.wasm`,import.meta.url).href;export{e as default};

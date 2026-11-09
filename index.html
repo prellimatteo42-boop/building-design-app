@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Free, open-source building information modeling in the browser: walls, doors, windows, floors, roofs, stairs and rooms on levels, with plans, sections, elevations, 3D, schedules, sheets and IFC export." />
+    <title>Building Design</title>
+    <meta name="theme-color" content="#e9ebee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16191e" media="(prefers-color-scheme: dark)" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/png" href="./icons/icon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./icons/icon-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <script>
+      // Apply a forced theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem('bd.theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-DLW7P-0o.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/earcut-igf7EuqS.js">
+    <link rel="modulepreload" crossorigin href="./assets/model-DTf4i62Q.js">
+    <link rel="modulepreload" crossorigin href="./assets/families-CHU0R7W1.js">
+    <link rel="modulepreload" crossorigin href="./assets/dom-CGiL1MYZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/build3d-jYhuno5K.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CaznXkYf.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>Building Design needs JavaScript to run.</noscript>
+  </body>
+</html>

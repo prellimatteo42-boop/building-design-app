@@ -1,0 +1,1 @@
+var e=new URL(`jbig2-BUnLb-NU.wasm`,import.meta.url).href;export{e as default};
